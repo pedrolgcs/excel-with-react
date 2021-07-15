@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import { FiDownload } from "react-icons/fi";
 import { useForm, SubmitHandler } from "react-hook-form";
+
+// utils
+import { ReportFormatters } from "../../utils/ReportFormatters";
 
 // assets
 import excelImg from "../../assets/excel.png";
@@ -14,18 +18,31 @@ type Inputs = {
 };
 
 const Home: React.FC = () => {
-  const [file, setFile] = useState<Blob>();
+  const [file, setFile] = useState<Blob | undefined>();
   const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = async (
     { usersFile, purchasesFile },
     event
   ) => {
-    console.log("entrou");
+    try {
+      const users = await ReportFormatters.users(usersFile);
+      const purchases = await ReportFormatters.purchases(purchasesFile);
+
+      console.log(users);
+      console.log(purchases);
+
+      toast.success("Arquivo pronto para download!");
+    } catch (error) {
+      toast.error("Opa! Aconteceu algum problema, tente novamente");
+    }
+
+    event?.target.reset();
+    return;
   };
 
   async function downloadFile() {
-    console.log('entrou')
+    console.log("entrou");
   }
 
   return (
@@ -51,7 +68,6 @@ const Home: React.FC = () => {
             type="file"
             id="purchases"
             accept=".xlsx, .xls"
-            required
           />
         </div>
 
