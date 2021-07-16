@@ -25,7 +25,7 @@ class ReportFormatters {
                 const user = {
                   id: line[1],
                   name: line[2],
-                  wallet: line[3],
+                  purchases_value: line[3],
                 };
 
                 users.push(user);

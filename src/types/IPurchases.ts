@@ -1,7 +1,7 @@
 type IPurchases = {
   id: string;
   product: string;
-  value: string;
+  value: number;
   user_id: string;
 };
 

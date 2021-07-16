@@ -1,7 +1,7 @@
 type IUsers = {
   id: string;
   name: string;
-  wallet: number;
+  purchases_value: number;
 };
 
 export type { IUsers };

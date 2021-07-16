@@ -38,7 +38,7 @@
     button {
       padding: 10px 0;
       border: 0;
-      background: #57837B;
+      background: #57837b;
       color: #f3f4ed;
       border-radius: 5px;
       cursor: pointer;
@@ -46,6 +46,32 @@
 
       &:hover {
         filter: grayscale(0.4);
+      }
+    }
+  }
+
+  .download-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    button {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 0;
+      background: #70b77e;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        filter: grayscale(0.4);
+      }
+
+      svg {
+        color: #f3f4ed;
+        font-size: 23px;
       }
     }
   }

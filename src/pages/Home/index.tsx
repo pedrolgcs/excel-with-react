@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 
 // utils
 import { ReportFormatters } from "../../utils/ReportFormatters";
+import { GenerateReports } from "../../utils/GenerateReports";
 
 // assets
 import excelImg from "../../assets/excel.png";
@@ -29,8 +30,9 @@ const Home: React.FC = () => {
       const users = await ReportFormatters.users(usersFile);
       const purchases = await ReportFormatters.purchases(purchasesFile);
 
-      console.log(users);
-      console.log(purchases);
+      const blobFile = await GenerateReports.users(users, purchases);
+
+      setFile(blobFile);
 
       toast.success("Arquivo pronto para download!");
     } catch (error) {
@@ -42,7 +44,11 @@ const Home: React.FC = () => {
   };
 
   async function downloadFile() {
-    console.log("entrou");
+    let url = window.URL.createObjectURL(file);
+    let a = document.createElement("a");
+    a.href = url;
+    a.download = "relatório-final.xlsx";
+    a.click();
   }
 
   return (
