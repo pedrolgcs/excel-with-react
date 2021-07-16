@@ -8,9 +8,12 @@ class ReportFormatters {
   public static async users(file: FileList): Promise<IUsers[]> {
     const users: IUsers[] = [];
 
-    const workbook = new Excel.Workbook();
+    // get file
     const reader = new FileReader();
     reader.readAsArrayBuffer(file[0]);
+
+    // create a workbook
+    const workbook = new Excel.Workbook();
 
     return new Promise((resolve) => {
       reader.onload = () => {
@@ -41,9 +44,12 @@ class ReportFormatters {
   public static async purchases(file: FileList): Promise<IPurchases[]> {
     const purchases: IPurchases[] = [];
 
-    const workbook = new Excel.Workbook();
+    // get file
     const reader = new FileReader();
     reader.readAsArrayBuffer(file[0]);
+
+    // create a workbook
+    const workbook = new Excel.Workbook();
 
     return new Promise((resolve) => {
       reader.onload = () => {
