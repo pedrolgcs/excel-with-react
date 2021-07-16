@@ -39,6 +39,11 @@ ou
 npm install
 ```
 
+Baixar os .xlsl que serão utilizados no exemplo
+
+- <a href="assets/users.xlsx" download>Usuários</a>
+- <a href="assets/purchases.xlsx" download>Compras</a>
+
 ## ☕ Executando
 
 Para executar, siga estas etapas:
