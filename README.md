@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# Excel + React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-## Available Scripts
+![GitHub repo size](https://img.shields.io/github/repo-size/pedrolgcs/excel-with-react?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/pedrolgcs/excel-with-react?style=for-the-badge)
 
-In the project directory, you can run:
+<p align="center">
+  <img src="assets/excel.png" alt="excel logo" width="200">
+</p>
 
-### `yarn start`
+> Projeto desenvolvido para explicar como trabalhar com arquivos .xlsx no React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Postagem 📖
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Este projeto foi desenvolvido com o propósito de explicar de forma prática como trabalhar com arquivos
+.xsls no React, para acessar o postagem clique [AQUI]('https://medium.com/@pedro.lg.cs')
 
-### `yarn test`
+## 💻 Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-### `yarn build`
+<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- NodeJS na na versão 14 ou superior
+- Você tem uma máquina `<Windows / Linux / Mac>`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Instalando
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para instalar todas as dependências do projeto, siga estas etapas:
 
-### `yarn eject`
+```bash
+yarn install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ou
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ☕ Executando
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Para executar, siga estas etapas:
 
-## Learn More
+```bash
+yarn start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Colaboradores
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/11464809?v=4" width="100px;" alt="Foto de Pedro Henrique"/><br>
+        <sub>
+          <b>Pedro Henrique</b>
+        </sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/51159478?v=4" width="100px;" alt="Foto do Hercules Gabriel"/><br>
+        <sub>
+          <b>Hercules Gabriel</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+## 😄 Seja um dos contribuidores<br>
+## 📝 Licença
+
+Esse projeto está sob licença MIT.
