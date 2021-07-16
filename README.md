@@ -2,6 +2,8 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
+![GitHub Repo stars](https://img.shields.io/github/stars/pedrolgcs/excel-with-react?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/pedrolgcs/excel-with-react?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/pedrolgcs/excel-with-react?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/pedrolgcs/excel-with-react?style=for-the-badge)
 
@@ -32,7 +34,6 @@ Para instalar todas as dependências do projeto, siga estas etapas:
 ```bash
 yarn install
 ```
-
 ou
 
 ```bash
@@ -77,7 +78,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
   </tr>
 </table>
 
-## 😄 Seja um dos contribuidores<br>
 ## 📝 Licença
 
 Esse projeto está sob licença MIT.
