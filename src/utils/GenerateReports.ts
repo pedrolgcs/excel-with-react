@@ -29,13 +29,13 @@ class GenerateReports {
 
     sheet.addSubtitleRow(["ID", "Nome", "valor das compras"]);
 
-    const usersRow = users.map(({ id, name, purchases_value }) => [
+    const userRows = users.map(({ id, name, purchases_value }) => [
       id,
       name,
       formatCurrency(purchases_value),
     ]);
 
-    sheet.addRows(usersRow);
+    sheet.addRows(userRows);
 
     const buffer = await sheet.finishSheet();
 
