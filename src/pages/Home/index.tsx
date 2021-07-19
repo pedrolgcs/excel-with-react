@@ -82,7 +82,7 @@ const Home: React.FC = () => {
 
       {file && (
         <div className="download-container">
-          <button onClick={downloadFile}>
+          <button type="button" onClick={downloadFile}>
             <FiDownload />
           </button>
         </div>
