@@ -28,7 +28,7 @@ class ReportFormatters {
                 const user = {
                   id: line[1],
                   name: line[2],
-                  purchases_value: line[3],
+                  purchases_value: Number(line[3]),
                 };
 
                 users.push(user);
@@ -64,7 +64,7 @@ class ReportFormatters {
                 const purchase = {
                   id: line[1],
                   product: line[2],
-                  value: line[3],
+                  value: Number(line[3]),
                   user_id: line[4],
                 };
 
